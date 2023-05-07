@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/login.css">
+
+<div class="container my-5">
+
+    <div class="row mt-3">
+        <div class="col-md-6 m-auto">
+            <div class="card card-body" id="main" style="margin-top: 13vh;">
+                <h1 class="text-center">Log In</h1>
+
+                <form action="/users/create-session" method="post">
+                    <div class="form-group mt-2">
+                        <label for="email" style="font-weight: bold;">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email"/>
+                    </div>
+    
+                    <div class="form-group mt-2">
+                        <label for="password" style="font-weight: bold;">Password:</label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Enter Your Password"/>
+                    </div>
+
+    
+                    <div class="d-grid gap-2 col-12 mx-auto mt-4">
+                        <button class="btn btn-primary" type="submit" style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); border-radius: 10px;">Log In</button>
+                    </div>
+
+                    <p class="lead mt-4" style="font-weight: bold;">
+                      <a class="r-link" href="/users/register" style="color: antiquewhite; margin-left: 78%;">Register Here</a>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>

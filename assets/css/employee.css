@@ -1,0 +1,46 @@
+body{
+    /* background-color: aqua; */
+    
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#table{
+    width: 70%;
+    margin-left: 13%;
+    margin-top: 3%;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 4px 4px 10px rgb(55 44 180),-4px -4px 10px rgb(197 67 85);
+    border-radius: 10px;
+}
+#assign{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 9vh;
+}
+.assign-reviewer{
+    background-color: #b1078d8a;
+    border-radius: 20px;
+    color: wheat;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px;
+    
+}
+.btn-submit{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: #f5deb3bd;
+    color: white;
+}
+.select{
+    border-radius: 22px;
+}
+.deletebtn{
+   background-color: #b556bc;
+   border-radius: 10px;
+    color: white;
+    width: 5vw !important;
+    display: flex;
+    justify-content: center;
+}

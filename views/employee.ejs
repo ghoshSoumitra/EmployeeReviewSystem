@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/employee.css">
+<h3 class="text-center mt-3" style="font-family: monospace; color: white; font-weight: bold; margin-top: 10vh !important; text-decoration: underline;">
+    All Employees List
+</h3>
+
+<div class="container mt-4" style="font-family: monospace;margin-left: 10vw;">
+
+    <table class="table  table-hover" id="table">
+        <thead>
+            <tr style="color: white; font-weight: bold;">
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Admin</th>
+                
+            </tr>
+        </thead>
+
+        <tbody style="color: wheat;" >
+            <% for(let i=0;i < employees.length;i++){ %>
+                <tr>
+                <td><%=employees[i].name %></td>
+                <td><%=employees[i].email %></td>
+                <td><%=employees[i].password %></td>
+                <td><%=employees[i].isAdmin %></td>
+                <td>
+                    <a href="/admin/delete-employee/<%=employees[i]._id%>" class="deletebtn">
+                        Remove
+                    </a>
+                </td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+  
+
+</div>
