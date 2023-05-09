@@ -1,6 +1,6 @@
 const express=require('express');
 const App=express();
-const port=8000;
+
 const expressLayouts = require('express-ejs-layouts');
 const db=require('./config/mongoose')
 const passport = require('passport');
@@ -56,6 +56,7 @@ App.use('/', require('./routes/home'));
 
 
 //listening to the port
-App.listen(port,()=>{
-   console.log("Server Running on 8000")
-})
+const port = process.env.PORT || 8000; 
+App.listen(port, () => {
+  console.log(`Server started on port ${port}`);
+});
