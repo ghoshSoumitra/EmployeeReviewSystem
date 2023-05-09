@@ -37,11 +37,11 @@ App.use(session({
        maxAge : (1000 * 60 * 100)
    },
    store:MongoStore.create({
-       mongoUrl: 'mongodb://127.0.0.1:27017/review-db',
-       autoRemove : 'disabled',
-   }, function(err){
-       console.log(err || 'connect-mongodb setup');
-   }),
+    mongoUrl: 'mongodb+srv://soumitra:56789123%40Sg@cluster0.qtleogu.mongodb.net/review-db?retryWrites=true&w=majority',
+    autoRemove : 'disabled',
+}, function(err){
+    console.log(err || 'connect-mongodb setup');
+}),
 }));
 
 
